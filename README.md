@@ -1,8 +1,55 @@
-# DA(S)pectralDenoiser: a Spectral Subtraction-based Denoiser for Distributed Acoustic Sensing data.  
+# DA(S)pectralDenoiser
+Spectral Subtraction-based Denoiser for Distributed Acoustic Sensing (DAS) data.  
 
-### This repository contains the implementation of a spectral subtraction-based denoising algorithm for Distributed Acoustic Sensing (DAS) data, applied to the Utah FORGE Enhanced Geothermal System (EGS) dataset.
+![Spectral Subtraction-based Workflow on DAS data](fig/fig1.pdf)
 
-A detailed description of the method is available in the paper:
+This repository implements a spectral subtraction-based denoising algorithm for DAS data, applied to the Utah FORGE Enhanced Geothermal System (EGS) dataset.
 
-*"Signal Enhancement of Distributed Acoustic Sensing data using a Spectral Subtraction-based Approach"* 
-*-- G.Pascucci, S.Gaviano, A.Pozzoli, F.Grigoli (2025). Seismological Research Letters (SRL). doi: XX.XXXXXXXXXXXXX*
+A detailed description of the method is available in the paper:  
+*G. Pascucci, S. Gaviano, A. Pozzoli, F. Grigoli (2025). Signal Enhancement of Distributed Acoustic Sensing data using a Spectral Subtraction-based Approach. Seismological Research Letters (SRL). doi: XX.XXXXXXXXXXXXX*
+
+---
+
+## Setup / Installation
+
+### 1. Clone the repository
+```
+git clone https://github.com/giuliopas/DASpectralDenoiser.git
+cd DASpectralDenoiser
+```
+
+### 2. Create and activate a Python environment
+*Option A: Using conda*
+```
+conda create -n das_env python=3.9
+conda activate das_env
+```
+*Option B: using venv*
+```
+python -m venv das_env
+# macOS/Linux
+source das_env/bin/activate
+# Windows (PowerShell)
+.\das_env\Scripts\Activate.ps1
+```
+
+### 3. Install required packages
+```
+pip install --upgrade pip #optional step
+pip install -r requirements.txt
+```
+
+## Usage:
+The file `Example_Denoising_FORGE.ipynb` contains a tutorial on how to run the code on a test DAS dataset from Utah FORGE (April 2022 stimulation).
+
+### Additional Notes:
+The example DAS data (.tdms format) used in `Example_Denoising_FORGE.ipynb` can be obtained in two ways:
+1. Download manually from Zenodo: https://doi.org/10.5281/zenodo.17554490
+2. Download directly from the notebook using Python:
+   ```
+   import urllib.request
+   fname = 'FORGE_DFIT_UTC_20220421_144609.398.tdms'
+   url = "https://zenodo.org/records/17554490/files/FORGE_DFIT_UTC_20220421_144609.398.tdms"
+   urllib.request.urlretrieve(url, fname)
+   ```
+
