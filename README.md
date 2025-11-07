@@ -19,9 +19,9 @@ cd DASpectralDenoiser
 ```
 
 ### 2. Create and activate a Python environment
-*Option A: Using conda*
+*Option A: Using conda (recommended)*
 ```
-conda create -n das_env python=3.9
+conda create -n das_env
 conda activate das_env
 ```
 *Option B: using venv*
