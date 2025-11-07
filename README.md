@@ -1,11 +1,11 @@
-# DA(S)pectralDenoiser
-Spectral Subtraction-based Denoiser for Distributed Acoustic Sensing (DAS) data.  
+# DA(S)pectralDenoiser: A Spectral Subtraction-based Denoiser for Distributed Acoustic Sensing (DAS) data.  
 
-![Spectral Subtraction-based Workflow on DAS data](fig/fig1.pdf)
+![DAS denoising workflow using a Spectral Subtraction-based approach](https://github.com/giuliopas/DASpectralDenoiser/blob/main/fig/fig1.png)
 
 This repository implements a spectral subtraction-based denoising algorithm for DAS data, applied to the Utah FORGE Enhanced Geothermal System (EGS) dataset.
 
-A detailed description of the method is available in the paper:  
+A detailed description of the method can be found in the paper:
+
 *G. Pascucci, S. Gaviano, A. Pozzoli, F. Grigoli (2025). Signal Enhancement of Distributed Acoustic Sensing data using a Spectral Subtraction-based Approach. Seismological Research Letters (SRL). doi: XX.XXXXXXXXXXXXX*
 
 ---
