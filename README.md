@@ -35,6 +35,8 @@ source das_env/bin/activate
 
 ### 3. Install required packages
 ```
+conda install pip
+
 pip install --upgrade pip #optional step
 pip install -r requirements.txt
 ```
