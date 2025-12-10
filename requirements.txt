@@ -1,3 +1,6 @@
 numpy
 matplotlib
 tqdm
+nptdms
+pandas
+scipy
