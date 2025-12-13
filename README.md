@@ -6,7 +6,7 @@ This repository implements a spectral subtraction-based denoising algorithm for 
 
 A detailed description of the method can be found in the paper:
 
-*G. Pascucci, S. Gaviano, A. Pozzoli, F. Grigoli (2025). Signal Enhancement of Distributed Acoustic Sensing data using a Spectral Subtraction-based Approach. Seismological Research Letters (SRL). doi:10.1785/0220250105 *
+*G. Pascucci, S. Gaviano, A. Pozzoli, F. Grigoli (2025). Signal Enhancement of Distributed Acoustic Sensing data using a Spectral Subtraction-based Approach. Seismological Research Letters (SRL). doi:10.1785/0220250105*
 
 ---
 
